@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{8D1EA49B-5E41-4971-A33C-6DA6A71A67D6}">
+	<children>
+		<child name="TestProject2" key="{F28AEBE3-EDBE-4290-8F8D-24DE015B3B57}" path="TestProject2\TestProject2.mds" />
+		<child name="TestProject4" key="{693028B1-71DF-464D-B58E-191016CC1920}" path="TestProject4\TestProject4.mds" />
+	</children>
+	<testItems key="{8105BE1D-6BFB-4C19-816B-F87968C1C116}">
+		<children>
+			<testItem key="{F28AEBE3-EDBE-4290-8F8D-24DE015B3B57}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{693028B1-71DF-464D-B58E-191016CC1920}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{13B92F47-E841-4CCB-9555-BE75F32F5A10}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{03BCEC59-33AF-4E33-9240-C4342BBCA6FC}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

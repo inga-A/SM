@@ -1,0 +1,59 @@
+﻿procedure Test1;
+  var TE, TFMain,scrollBox,panel,panel2,tcxPopupEdit,tsmLookUpComboBox,tcxButton,tcxCustomInnerMemo, 
+  tcxSpinEdit,tcxCustomInnerTextEdit;
+
+begin
+  TestedApps.TestEnvironment_TD32.Run(1, true);
+  
+  TE := Aliases.TestEnvironment_TD32_;
+  
+  
+  TFMain := TE.FMain;
+  
+  TFMain.Maximize;
+  TFMain.dxRibbon.ClickItem('dxRibbonTab1|[0]|Форма редакторов');
+  
+  scrollBox := TFMain.MDIClient.FEdits.sbMain;
+  panel := scrollBox.pMainPanel;
+  
+  panel.mTest.mTestEdit.TcxCustomInnerMemo.SetFocus;
+  panel.mTest.mTestEdit.TcxCustomInnerMemo.Keys('qwerty asdf qwerty');
+  panel2 := scrollBox.pButtonsPanel;
+  panel2.TcxButton9.ClickButton;
+  
+  panel.edTest.edTestEdit.TcxCustomInnerTextEdit.SetFocus;
+  panel.edTest.edTestEdit.TcxCustomInnerTextEdit.SetText('qwerty');
+  panel2.TcxButton10.ClickButton;
+  
+  panel.cbTest.cbTestEdit.wState := cbchecked;
+  panel2.TcxButton2.ClickButton;
+  panel.cbTest.cbTestEdit.wState := cbUnchecked;
+  panel2.TcxButton2.ClickButton;
+  
+  tcxSpinEdit := panel.seTest.seTestEdit;
+  tcxSpinEdit.SetFocus;
+  tcxSpinEdit.value:=random(100);
+ 
+  tcxSpinEdit.Click(279, 2);
+  panel2.TcxButton4.ClickButton;
+
+  panel.deTest.detestedit.SetFocus;
+  panel.deTest.detestedit.Click(280, 14);
+  TE.TcxDateEditPopupWindow.TcxPopupCalendar.Click(100, 102);
+  panel.deTest.deTestEdit.SelectFirst;
+  panel2.TcxButton5.ClickButton;
+  
+  panel.peTest.peTestProgress.SetFocus;
+  panel.peTest.peTestProgress.Keys(Random(99));
+  panel.peTest.peTestUp.DblClick(10, 6);
+  panel2.TcxButton6.ClickButton;
+
+  
+  panel.lueTest.lueTestEdit.SetFocus; 
+  panel.lueTest.lueTestEdit.Click(287, 9);
+  panel.lueTest.lueTestEdit.Click(266, 14);
+  TE.TcxComboBoxPopupWindow.TcxCustomLookupDBGrid.Click(270, 9);
+  panel2.TcxButton7.ClickButton;
+  TFMain.MDIClient.Click(145,588);
+
+end;

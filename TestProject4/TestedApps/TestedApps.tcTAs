@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1400" key="{C56C0E8D-530A-4B24-9E0F-5EFCC3C9660D}" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{1491D7A3-B82B-4F11-9057-3A33EFA29779}">
+			<config nodeName="TestEnvironment_TD32" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="False">
+				<runModeParams activeRunMode="Simple">
+					<param name="RunAs" parameters="" workFolder="C:\Users\Ingus\Downloads" userName="" password="" domain="" />
+					<param name="Profile" parameters="" workFolder="C:\Users\Ingus\Downloads" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="" workFolder="C:\Users\Ingus\Downloads" />
+					<param name="Simple" fileName="TestEnvironment(TD32).exe" filePath="C:\Users\Ingus\Downloads\" parameters="" workFolder="C:\Users\Ingus\Downloads" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>
